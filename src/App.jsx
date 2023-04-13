@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import Admin from './pages/Admin';
+import Login from './pages/Login';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-    <Admin/>
-    </div>
+   <Switch>
+    <Route exact path="/admin" component={ Admin }/>
+    <Route exact path="/" component={ Login }/>
+  </Switch>
+   
   )
 }
 
