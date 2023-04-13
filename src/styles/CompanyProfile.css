@@ -1,0 +1,55 @@
+.company-profile {
+    max-width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .container-profile {
+    width: 80%;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-image {
+    max-width: 200px;
+    margin-top: 10px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .company-profile {
+      padding: 10px;
+      flex-direction: column;
+    }
+  
+    .label {
+      font-size: 14px;
+    }
+  
+    input,
+    textarea {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

@@ -4,8 +4,8 @@ const Aside = () => {
   const history = useHistory();
   return (
     <aside className="aside">
-      <button>Products</button>
-      <button>Company Profile</button>
+      <button onClick={() => history.push("./admin")}>Products</button>
+      <button onClick={() => history.push("./companyProfile")}>Company Profile</button>
       <button onClick={() => history.push("./")}>Logout</button>
     </aside>
   );
