@@ -60,7 +60,12 @@ aside button {
     margin-top: 10px;
     gap: 30px;
   }
-  /* Estilo para os botões */
+  
+  .container-button {
+    display: flex;
+    gap: 5px;
+  }
+
   .button {
     color: black;
     border: 1px solid black;
@@ -79,7 +84,6 @@ aside button {
     color: white;
     font-weight: 700;
     border-radius: 0;
-    margin-left: 5px;
   }
 
   .container-title {

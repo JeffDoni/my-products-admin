@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Aside from "../components/Aside";
 
 const Admin = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(JSON.parse(localStorage.getItem("products")) || []);
   const [enableBTn, setEnableBtn] = useState(false);
 
   const [newProduct, setNewProduct] = useState({
@@ -98,7 +98,7 @@ const Admin = () => {
                   <tr key={index}>
                     <td>{product.name}</td>
                     <td className="priceCell">$ {Number(product.price).toFixed(2)}</td>
-                    <td>
+                    <td className="container-button">
                       <button
                         onClick={() => handleEditProduct(index)}
                         className="button"
